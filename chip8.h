@@ -8,9 +8,10 @@ class chip8 {
         chip8();
         bool load_rom(const std::string& filename);
         void cycle();
-        const uint8_t* get_display() const;
+        const uint8_t* get_display() const { return display; };
         void set_keys(const bool* pressed_keys);
         uint16_t get_pc() const { return pc; }
+        void tick_timers();
     private:
         uint8_t reg[16]{};
         uint8_t mem[4096]{};

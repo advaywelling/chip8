@@ -235,3 +235,14 @@ void chip8::cycle() {
         break;
     }
 }
+
+void chip8::tick_timers() {
+    if (delay_timer > 0) delay_timer--;
+    if (sound_timer > 0) sound_timer--;
+}
+
+void chip8::set_keys(const bool* pressed_keys) {
+    for (int i{}; i < 16; i++) {
+        keys[i] = pressed_keys[i];
+    }
+}
