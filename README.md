@@ -8,7 +8,7 @@ Chip-8 is an interpreted virtual machine from the 1970s, designed to make simple
 
 ## Features
 
-- Full instruction set — all 35 Chip-8 opcodes
+- Full instruction set - all 35 Chip-8 opcodes
 - 64×32 monochrome display, rendered and scaled up via SDL2
 - 16-key hex keypad input mapped to the keyboard
 - Delay and sound timers running at 60 Hz
