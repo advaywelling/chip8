@@ -5,7 +5,7 @@
 int main() {
     chip8 cpu{};
 
-    if (!cpu.load_rom("ROMS/Pong [Paul Vervalin, 1990].ch8")) {
+    if (!cpu.load_rom("ROMS/Tetris [Fran Dachille, 1991].ch8")) {
         return 1;
     }
     Display display("Chip8", 640, 320);

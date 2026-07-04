@@ -1,6 +1,6 @@
 # Chip-8 Emulator
 
-A Chip-8 emulator written in C++ with SDL2 for graphics and input. Loads and runs classic Chip-8 ROMs — Pong, Tetris, and more.
+A Chip-8 emulator written in C++ with SDL2 for graphics and input. Loads and runs all Chip-8 ROMs (hopefully).
 
 ## About
 
