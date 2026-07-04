@@ -1,6 +1,7 @@
 #pragma once
 #include <cstdint>
 #include <string>
+#include <random>
 
 class chip8 {
     public:
@@ -9,7 +10,7 @@ class chip8 {
         void cycle();
         const uint8_t* get_display() const;
         void set_keys(const bool* pressed_keys);
-
+        uint16_t get_pc() const { return pc; }
     private:
         uint8_t reg[16]{};
         uint8_t mem[4096]{};
@@ -21,4 +22,6 @@ class chip8 {
         uint8_t sound_timer{};
         uint8_t display[64 * 32]{};   
         bool keys[16]{}; 
+        std::mt19937 rng;
+        std::uniform_int_distribution<int> dist{0,255};
 };
